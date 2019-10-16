@@ -8,11 +8,7 @@ client.on('ready', () => {
 
 
 
-var myArray = [
-  "____ tastes like food.",
-  "____ is no more.",
-  "Pears"
-];
+
 
 
 
@@ -22,6 +18,11 @@ client.on("message", function(message) {
     
     
     if(message.content === "-draw") {
+          var myArray = [
+            "____ tastes like food.",
+             "____ is no more.",
+             "Pears"
+            ];  
           var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
           message.channel.send("The Card: **" + randomItem + "**")
     }
