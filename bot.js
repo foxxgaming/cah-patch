@@ -23,7 +23,7 @@ client.on("message", function(message) {
     
     if(message.content === "-draw") {
           var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
-          message.channel.send("The Card: ``" + randomItem + "``")
+          message.channel.send("The Card: **" + randomItem + "**")
     }
     
     
