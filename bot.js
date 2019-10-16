@@ -8,12 +8,9 @@ client.on('ready', () => {
 
 
 
-
-client.on('message', msg => {
-    if (msg.content === 'ping') {
-      msg.reply('pong');
-    }
-  });
+client.on("message", function(message) {
+  message.channel.send('My Message')
+});
 
 
 client.login(process.env.BOT_TOKEN);
