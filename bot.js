@@ -8,13 +8,22 @@ client.on('ready', () => {
 
 
 
+var myArray = [
+  "Apples",
+  "Bananas",
+  "Pears"
+];
+
+
+
 client.on("message", function(message) {
     
     
     
     
-    if(message.content === "ping") {
-          message.channel.send('My Message')
+    if(message.content === "-draw") {
+          var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
+          message.channel.send(randomItem)
     }
     
     
