@@ -9,7 +9,18 @@ client.on('ready', () => {
 
 
 client.on("message", function(message) {
-  message.channel.send('My Message')
+    
+    
+    
+    
+    if(message.content === "ping") {
+          message.channel.send('My Message')
+    }
+    
+    
+    
+    
+    
 });
 
 
