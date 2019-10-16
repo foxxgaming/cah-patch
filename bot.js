@@ -9,8 +9,8 @@ client.on('ready', () => {
 
 
 var myArray = [
-  "Apples",
-  "Bananas",
+  "____ tastes like food.",
+  "____ is no more.",
   "Pears"
 ];
 
