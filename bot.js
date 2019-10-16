@@ -21,7 +21,12 @@ client.on("message", function(message) {
           var myArray = [
             "____ tastes like food.",
              "____ is no more.",
-             "Pears"
+             "____ worships satan.",
+             "____ finds joy in kpop.",
+             "Witches have ____." 
+
+
+
             ];  
           var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
           message.channel.send("The Card: **" + randomItem + "**")
