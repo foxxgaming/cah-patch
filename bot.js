@@ -5,7 +5,7 @@ client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 });
 
-
+var beg = message.content.slice(6, message.content.length)
 
 
 
@@ -34,7 +34,7 @@ client.on("message", function(message) {
 
     if (message.content.startsWith("-place ")) {
        message.delete(1); //Supposed to delete message
-       message.channel.send(message.content.slice(6, message.content.length));
+       message.channel.send(beg);
     }
 
 
