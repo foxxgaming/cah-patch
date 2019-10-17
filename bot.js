@@ -27,7 +27,7 @@ var myArray = [
 
   ];
 var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
-
+var cardMod = randomItem.slice(5, randomItem.length)
     if(message.content === "-draw") {
           message.channel.send("The Card: **" + randomItem + "**")
           message.channel.send("Awaiting input")
@@ -39,7 +39,7 @@ var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
     }
 //REFERENCE: var beg = message.content.slice(6, message.content.length)
 
-var cardMod = randomItem.slice(5, randomItem.length)
+
 
     if (message.content.startsWith("-place ")) {
        message.delete(1); //Supposed to delete message
