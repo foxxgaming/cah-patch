@@ -43,7 +43,7 @@ var cardMod = randomItem.slice(5, randomItem.length)
 
     if (message.content.startsWith("-place ")) {
        message.delete(1); //Supposed to delete message
-       message.channel.send(beg + cardMod);
+       message.channel.send(beg + " " + cardMod);
     }
 
 
