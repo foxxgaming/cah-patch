@@ -29,7 +29,7 @@ var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
     if(message.content === "-draw") {
           message.channel.send("The Card: **" + randomItem + "**")
           message.channel.send("Awaiting input...")
-          while 1=1 {
+          while (1<2) {
             setTimeout(function () {
               if (message.content.startsWith("-place ")) {
                  message.delete(1); //Supposed to delete message
