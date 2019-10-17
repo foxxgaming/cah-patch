@@ -30,18 +30,13 @@ client.on("message", function(message) {
           var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
           message.channel.send("The Card: **" + randomItem + "**")
           message.channel.send("Awaiting input...")
-
-   if (message.content.startsWith("-place ")) {
-      message.delete(1000); //Supposed to delete message
-      message.channel.send(message.content.slice(5, message.content.length));
-   }
-});
-
-
-
     }
 
-
+    if (message.content.startsWith("-place ")) {
+       message.delete(1000); //Supposed to delete message
+       message.channel.send(message.content.slice(5, message.content.length));
+    }
+ });
 
 
 
