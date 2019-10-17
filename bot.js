@@ -31,7 +31,7 @@ client.on("message", function(message) {
           message.channel.send("The Card: **" + randomItem + "**")
           message.channel.send("Awaiting input...")
 
-          client.on('message', message => {
+          client.on('message', message => {git config --global user.name "Your Name"
    if (message.content.startsWith("-place ")) {
       message.delete(1000); //Supposed to delete message
       message.channel.send(message.content.slice(5, message.content.length));
