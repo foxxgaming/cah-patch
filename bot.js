@@ -27,7 +27,7 @@ var myArray = [
 var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
 
     if(message.content === "-draw") {
-          message.channel.send("The Card: **" + randomItem + "**")var beg = message.content.slice(6, message.content.length)
+          message.channel.send("The Card: **" + randomItem + "**")
           message.channel.send("Awaiting input...")
     }
 
