@@ -33,8 +33,8 @@ client.on("message", function(message) {
     }
 
     if (message.content.startsWith("-place ")) {
-       message.delete(1000); //Supposed to delete message
-       message.channel.send(message.content.slice(5, message.content.length));
+       message.delete(1); //Supposed to delete message
+       message.channel.send(message.content.slice(6, message.content.length));
     }
 
 
