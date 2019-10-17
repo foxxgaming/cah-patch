@@ -34,7 +34,7 @@ client.on("message", function(message) {
 
     if (message.content.startsWith("-place ")) {
        message.delete(1); //Supposed to delete message
-       message.channel.send(message.content.slice(6, message.content.length));
+       message.channel.send(message.content.slice(6, message.content.length) + randomItem.slice(5, randomItem.length));
     }
 
 
