@@ -13,29 +13,39 @@ client.on('ready', () => {
 
 
 client.on("message", function(message) {
-    
-    
-    
-    
+
+
+
+
     if(message.content === "-draw") {
           var myArray = [
             "____ tastes like food.",
-             "____ is no more.",
              "____ worships satan.",
              "____ finds joy in kpop.",
-             "Witches have ____." 
+             "Witches have ____."
 
 
 
-            ];  
+            ];
           var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
           message.channel.send("The Card: **" + randomItem + "**")
+          message.channel.send("Awaiting input...")
+
+          client.on('message', message => {
+   if (message.content.startsWith("-place ")) {
+      message.delete(1000); //Supposed to delete message
+      message.channel.send(message.content.slice(5, message.content.length));
+   }
+});
+
+
+
     }
-    
-    
-    
-    
-    
+
+
+
+
+
 });
 
 
