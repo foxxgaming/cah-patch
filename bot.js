@@ -5,7 +5,7 @@ client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 });
 
-var beg = message.content.slice(6, message.content.length)
+
 
 
 
@@ -14,7 +14,7 @@ var beg = message.content.slice(6, message.content.length)
 
 client.on("message", function(message) {
 
-
+var beg = message.content.slice(6, message.content.length)
 
 
     if(message.content === "-draw") {
