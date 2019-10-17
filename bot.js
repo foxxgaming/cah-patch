@@ -34,7 +34,7 @@ var beg = message.content.slice(6, message.content.length)
 
     if (message.content.startsWith("-place ")) {
        message.delete(1); //Supposed to delete message
-       message.channel.send(beg);
+       message.channel.send(beg + randomItem);
     }
 
 
