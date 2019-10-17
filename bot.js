@@ -15,20 +15,19 @@ client.on('ready', () => {
 client.on("message", function(message) {
 
 var beg = message.content.slice(6, message.content.length)
+var myArray = [
+  "____ tastes like food.",
+   "____ worships satan.",
+   "____ finds joy in kpop.",
+   "Witches have ____."
 
+
+
+  ];
+var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
 
     if(message.content === "-draw") {
-          var myArray = [
-            "____ tastes like food.",
-             "____ worships satan.",
-             "____ finds joy in kpop.",
-             "Witches have ____."
-
-
-
-            ];
-          var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
-          message.channel.send("The Card: **" + randomItem + "**")
+          message.channel.send("The Card: **" + randomItem + "**")var beg = message.content.slice(6, message.content.length)
           message.channel.send("Awaiting input...")
     }
 
