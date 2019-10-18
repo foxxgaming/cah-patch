@@ -21,7 +21,12 @@ var myArray = [
   "____ tastes like food.",
    "____ worships satan.",
    "____ finds joy in kpop.",
-   "____ is what she said."
+   "____ is what she said.",
+    "____ is gay.",
+    "____ worships the KKK.",
+    "____ is in hell.",
+    "____ has furry fetishes.",
+    "____ likes your mom."
 
 
 
